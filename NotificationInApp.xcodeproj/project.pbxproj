@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F61D568E1E7FF675003259E3 /* PYOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F61D568D1E7FF675003259E3 /* PYOperationManager.m */; };
 		F6642A491E7F6EF000F9B4EF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F6642A481E7F6EF000F9B4EF /* main.m */; };
 		F6642A4C1E7F6EF000F9B4EF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F6642A4B1E7F6EF000F9B4EF /* AppDelegate.m */; };
 		F6642A4F1E7F6EF000F9B4EF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6642A4E1E7F6EF000F9B4EF /* ViewController.m */; };
@@ -14,6 +15,7 @@
 		F6642A541E7F6EF000F9B4EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6642A531E7F6EF000F9B4EF /* Assets.xcassets */; };
 		F6642A571E7F6EF000F9B4EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6642A551E7F6EF000F9B4EF /* LaunchScreen.storyboard */; };
 		F6642A621E7F6EF000F9B4EF /* NotificationInAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F6642A611E7F6EF000F9B4EF /* NotificationInAppTests.m */; };
+		F6642A721E7FB67600F9B4EF /* PY_NotificationInAppView.m in Sources */ = {isa = PBXBuildFile; fileRef = F6642A711E7FB67600F9B4EF /* PY_NotificationInAppView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +29,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F61D568B1E7FF675003259E3 /* PYOperationheader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYOperationheader.h; sourceTree = "<group>"; };
+		F61D568C1E7FF675003259E3 /* PYOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PYOperationManager.h; sourceTree = "<group>"; };
+		F61D568D1E7FF675003259E3 /* PYOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PYOperationManager.m; sourceTree = "<group>"; };
 		F6642A441E7F6EF000F9B4EF /* NotificationInApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotificationInApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6642A481E7F6EF000F9B4EF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F6642A4A1E7F6EF000F9B4EF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -40,6 +45,8 @@
 		F6642A5D1E7F6EF000F9B4EF /* NotificationInAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotificationInAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6642A611E7F6EF000F9B4EF /* NotificationInAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationInAppTests.m; sourceTree = "<group>"; };
 		F6642A631E7F6EF000F9B4EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6642A701E7FB67600F9B4EF /* PY_NotificationInAppView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PY_NotificationInAppView.h; sourceTree = "<group>"; };
+		F6642A711E7FB67600F9B4EF /* PY_NotificationInAppView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PY_NotificationInAppView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +67,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F61D568A1E7FF675003259E3 /* PYOperationManager */ = {
+			isa = PBXGroup;
+			children = (
+				F61D568B1E7FF675003259E3 /* PYOperationheader.h */,
+				F61D568C1E7FF675003259E3 /* PYOperationManager.h */,
+				F61D568D1E7FF675003259E3 /* PYOperationManager.m */,
+			);
+			path = PYOperationManager;
+			sourceTree = "<group>";
+		};
 		F6642A3B1E7F6EF000F9B4EF = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +98,7 @@
 		F6642A461E7F6EF000F9B4EF /* NotificationInApp */ = {
 			isa = PBXGroup;
 			children = (
+				F6642A6C1E7F8C9E00F9B4EF /* PY_NotificationInAppClass */,
 				F6642A4A1E7F6EF000F9B4EF /* AppDelegate.h */,
 				F6642A4B1E7F6EF000F9B4EF /* AppDelegate.m */,
 				F6642A4D1E7F6EF000F9B4EF /* ViewController.h */,
@@ -109,6 +127,16 @@
 				F6642A631E7F6EF000F9B4EF /* Info.plist */,
 			);
 			path = NotificationInAppTests;
+			sourceTree = "<group>";
+		};
+		F6642A6C1E7F8C9E00F9B4EF /* PY_NotificationInAppClass */ = {
+			isa = PBXGroup;
+			children = (
+				F61D568A1E7FF675003259E3 /* PYOperationManager */,
+				F6642A701E7FB67600F9B4EF /* PY_NotificationInAppView.h */,
+				F6642A711E7FB67600F9B4EF /* PY_NotificationInAppView.m */,
+			);
+			path = PY_NotificationInAppClass;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,6 +246,8 @@
 				F6642A4F1E7F6EF000F9B4EF /* ViewController.m in Sources */,
 				F6642A4C1E7F6EF000F9B4EF /* AppDelegate.m in Sources */,
 				F6642A491E7F6EF000F9B4EF /* main.m in Sources */,
+				F6642A721E7FB67600F9B4EF /* PY_NotificationInAppView.m in Sources */,
+				F61D568E1E7FF675003259E3 /* PYOperationManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
