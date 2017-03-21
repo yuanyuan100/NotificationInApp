@@ -57,6 +57,7 @@
 
 - (void)handlerGesture:(UIGestureRecognizer *)gesture {
     if ([gesture isKindOfClass:[UITapGestureRecognizer class]]) {
+        [self hideRightNow];
         if (self.SureBlock) {
             self.SureBlock();
         }
@@ -74,6 +75,9 @@
     // 基本属性
     self.frame = CGRectMake(0, -self.size.height, self.size.width, self.size.height);
     self.backgroundColor = [UIColor colorWithRed:208.0f/255.0 green:0.0f blue:24.0f/255.0 alpha:0.9f];
+    self.layer.shadowColor = [UIColor colorWithRed:102.0/255.0 green:102.0/255.0 blue:102.0/255.0 alpha:1].CGColor;
+    self.layer.shadowOffset=CGSizeMake(2, 2);
+    self.layer.shadowOpacity=0.3;
     
     // 标题
     self.titleLabel = [[UILabel alloc] init];
